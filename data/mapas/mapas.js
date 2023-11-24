@@ -216,4 +216,226 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
 
+      // próximos cards
+
+      {
+        nome: 'Rota Céu',
+        imagem: '/images/circuitomario',
+        descricao: 'Uma pista que sobe para o céu com caminhos estreitos e elevações.',
+        inspiracao: ' Uma pista que sobe para o céu, sem uma inspiração geográfica específica.',
+        copa: 'Copa Folha',
+        trofeus:  1100,
+        plataforma: 'Nintendo Switch'
+      },
+      {
+        nome: 'Circuito Yoshi',
+        imagem: '/images/mansaodomario',
+        descricao: 'Um circuito com temática de Yoshi, com caminhos sinuosos e uma seção antigravidade.',
+        inspiracao: 'Inspirado no personagem Yoshi e em seus ambientes.',
+        copa: 'Copa Folha',
+        trofeus: 1100,
+        plataforma: 'Nintendo Switch'
+      },
+      {
+        nome: 'Mansão do Cidadão',
+        imagem: '/images/desfiladeiroad',
+        descricao: 'Uma mansão com salas extravagantes, corredores estreitos e uma seção antigravidade.',
+        inspiracao: 'Inspirado em mansões assombradas e na cidade.',
+        copa: 'Copa Folha',
+        trofeus: 1100,
+        plataforma: 'Nintendo Switch'
+      },
+      {
+        nome: 'Estádio do Animal Crossing',
+        imagem: '/images/parquecorridadelfino',
+        descricao: 'Baseada na série Animal Crossing, esta pista muda de estação conforme as voltas, afetando a jogabilidade.',
+        inspiracao: 'Inspirado na série Animal Crossing, mudando de estação a cada volta.',
+        copa: 'Copa Folha',
+        trofeus: 1100,
+        plataforma: 'Nintendo Switch'
+      },
+      {
+        nome: 'Pista da Coroa',
+        imagem: '/images/pistamario',
+        descricao: 'Uma pista luxuosa dentro do Castelo da Peach, com caminhos elaborados e uma seção antigravidade.',
+        inspiracao: 'Inspirado em ambientes luxuosos dentro do Castelo da Peach.',
+        copa: 'Copa Especial',
+        trofeus: 1200,
+        plataforma: 'Nintendo Switch'
+      },
+      {
+        nome: 'Vulcão Grumble',
+        imagem: '/images/pantanovenenoso',
+        descricao: 'Uma pista vulcânica com lava, rampas e partes subterrâneas.',
+        inspiracao: 'Inspirado em ambientes vulcânicos.',
+        copa: 'Copa Especial',
+        trofeus: 1200,
+        plataforma: 'Nintendo Switch'
+      },
+      {
+        nome: 'Desfiladeiro N64 Rainbow Road',
+        imagem: '/images/dunadoyoshi',
+        descricao: 'Uma versão modernizada da icônica Rainbow Road do Nintendo 64, com seções antigravidade.',
+        inspiracao: 'Uma versão modernizada da icônica Rainbow Road do Nintendo 64.',
+        copa: 'Copa Especial',
+        trofeus:  1200,
+        plataforma: 'Nintendo Switch'
+      },
+      {
+        nome: 'Parque Corrida da Pista Ice',
+        imagem: '/images/estadiodamusicaelectrodrome',
+        descricao: 'Um parque de diversões de inverno com gelo, rampas e partes subterrâneas.',
+        inspiracao: 'Inspirado em parques de diversões de inverno.',
+        copa: 'Copa Especial',
+        trofeus: 1200,
+        plataforma: 'Nintendo Switch'
+      },
+      {
+        nome: 'Circuito Excitebike',
+        imagem: '/images/circuitotoad',
+        descricao: 'Baseada no jogo Excitebike, esta pista tem saltos e rampas inspirados no jogo de motocross.',
+        inspiracao: ' Baseado no jogo Excitebike, com rampas e saltos inspirados no motocross.',
+        copa: 'Copa Ovo',
+        trofeus: 1300 ,
+        plataforma: 'Nintendo Switch'
+      },
+      {
+        nome: 'Floresta do Dragão',
+        imagem: '/images/portodetoad',
+        descricao: 'Uma pista florestal com caminhos estreitos e obstáculos, incluindo a presença de dragões.',
+        inspiracao: 'Inspirada em florestas com a presença de dragões.',
+        copa: 'Copa Ovo',
+        trofeus: 1300 ,
+        plataforma: 'Nintendo Switch'
+      },
+      {
+        nome: 'Estádio da Música Hyrule',
+        imagem: '/images/estradadafloresta',
+        descricao: 'Baseada na série The Legend of Zelda, esta pista inclui elementos da franquia, como rupees e Triforces.',
+        inspiracao: 'Inspirado na série The Legend of Zelda, com elementos da franquia.',
+        copa: 'Copa Ovo',
+        trofeus: 1300,
+        plataforma: 'Nintendo Switch'
+      },
+      {
+        nome: 'Cidade das Luzes',
+        imagem: '/images/volantewario',
+        descricao: 'Uma pista urbana noturna com muitas luzes brilhantes, rampas e caminhos elevados.',
+        inspiracao: 'Inspirado em ambientes urbanos noturnos com muitas luzes.',
+        copa: 'Copa Ovo',
+        trofeus:1300,
+        plataforma: 'Nintendo Switch'
+      },
+
+      //Copa Leve
+
+      {
+        nome: 'Circuito do Pára-Quedas',
+        imagem: '/images/minastwistedmansion',
+        descricao: 'Uma pista situada em um aeroporto, com caminhos elevados e rampas que lembram uma pista de decolagem.',
+        inspiracao: 'Inspirado em aeroportos, com pistas elevadas e rampas que lembram uma pista de decolagem.',
+        copa: 'Copa Leve',
+        trofeus: 1400,
+        plataforma: 'Nintendo Switch'
+      },
+      {
+        nome: 'Água Piscina',
+        imagem: '/images/pistadesherbet',
+        descricao: 'Uma pista aquática que passa por uma piscina com partes subaquáticas e ondas.',
+        inspiracao: 'Uma pista aquática que passa por uma piscina com partes subaquáticas e ondas.',
+        copa: 'Copa Leve',
+        trofeus: 1400,
+        plataforma: 'Nintendo Switch'
+      },
+      {
+        nome: 'Porto de Cheep Cheep',
+        imagem: '/images/picodesherbet',
+        descricao: 'Um porto movimentado com partes subaquáticas, barcos e caminhos estreitos.',
+        inspiracao: 'Inspirado em portos movimentados com partes subaquáticas, barcos e caminhos estreitos.',
+        copa: 'Copa Leve',
+        trofeus: 1400,
+        plataforma: 'Nintendo Switch'
+      },
+      {
+        nome: 'Castelo de Bowser',
+        imagem: '/images/volantedemel',
+        descricao: 'Uma pista dentro do Castelo de Bowser, com seções antigravidade e obstáculos desafiadores.',
+        inspiracao: ' Inspirado no Castelo de Bowser, com seções antigravidade e obstáculos desafiadores.',
+        copa: 'Copa Leve',
+        trofeus: 1400,
+        plataforma: 'Nintendo Switch'
+      },
+      {
+        nome: 'Circuito do Céu',
+        imagem: '/images/desfiladeiromontanharussa',
+        descricao: 'Uma pista elevada no céu com caminhos estreitos e obstáculos, proporcionando uma experiência emocionante.',
+        inspiracao: ' Inspirado em ambientes celestiais com caminhos estreitos e obstáculos.',
+        copa: 'Copa Flor de Ouro',
+        trofeus: 1500 ,
+        plataforma: 'Nintendo Switch'
+      },
+      {
+        nome: 'Desfiladeiro do Céu',
+        imagem: '/images/pistadonut',
+        descricao: 'Um desfiladeiro nas nuvens com curvas acentuadas e partes antigravidade.',
+        inspiracao: 'Inspirado em desfiladeiros nas nuvens com curvas acentuadas e partes antigravidade.',
+        copa: 'Copa Flor de Ouro',
+        trofeus: 1500,
+        plataforma: 'Nintendo Switch'
+      },
+      {
+        nome: 'Mina do Céu',
+        imagem: '/images/praiadecheepcheep',
+        descricao: 'Uma mina suspensa no céu com caminhos estreitos e seções antigravidade.',
+        inspiracao: 'Inspirado em minas suspensas no céu com caminhos estreitos e seções antigravidade.',
+        copa: 'Copa Flor de Ouro',
+        trofeus: 1500,
+        plataforma: 'Nintendo Switch'
+      },
+      {
+        nome: 'Estrada do Céu',
+        imagem: '/images/parquecorridabonecodeneve',
+        descricao: 'Uma estrada flutuante no céu com caminhos sinuosos e obstáculos desafiadores.',
+        inspiracao: 'Inspirado em estradas flutuantes no céu com caminhos sinuosos e obstáculos desafiadores.',
+        copa: 'Copa Flor de Ouro',
+        trofeus: 1500,
+        plataforma: 'Nintendo Switch'
+      },
+      {
+        nome: 'Estádio de Wario',
+        imagem: '/images/jardimboreal',
+        descricao: ' Pista cheia de obstáculos malucos e truques, refletindo a personalidade excêntrica de Wario. Terrenos irregulares e surpresas inesperadas mantêm a corrida animada e imprevisível.',
+        inspiracao: 'Criado para ser uma extensão do estilo trapaceiro e extravagante de Wario, o estádio é uma expressão divertida da natureza caótica do personagem.',
+        copa: 'Copa Coroa',
+        trofeus: 1700,
+        plataforma: 'Nintendo Switch'
+      },
+      {
+        nome: 'Circuito da Rosalina',
+        imagem: '/images/volantewario',
+        descricao: 'Uma jornada celestial com paisagens cósmicas. A pista oferece curvas suaves, desafios de gravidade e visuais deslumbrantes, incorporando uma atmosfera mágica e etérea.',
+        inspiracao: 'Inspirado na personagem Rosalina e sua conexão com o espaço, o circuito reflete a majestade do cosmos, proporcionando uma experiência visualmente impressionante.',
+        copa: 'Copa Coroa',
+        trofeus: 1700,
+        plataforma: 'Nintendo Switch'
+      },
+      {
+        nome: 'Pista da Música Rainbow Road',
+        imagem: '/images/minadoceu',
+        descricao: 'Pista festiva suspensa no espaço, rodeada por arco-íris brilhantes. Desafios visuais e uma trilha sonora dinâmica criam uma experiência sensorial única e empolgante.',
+        inspiracao: 'Seguindo a tradição da série Mario Kart, a pista é um espetáculo visual e auditivo, oferecendo uma corrida emocionante em um ambiente festivo.',
+        copa: 'Copa Coroa',
+        trofeus: 1700,
+        plataforma: 'Nintendo Switch'
+      },
+      {
+        nome: 'Castelo de Bowser',
+        imagem: '/images/estradadoceu',
+        descricao: 'Uma pista épica e intimidante, ambientada nos domínios do vilão Bowser. Corredores enfrentam desafios intensos dentro e ao redor do castelo, incluindo a fúria do próprio Bowser.',
+        inspiracao: 'Baseado nos castelos sinistros associados a Bowser, o circuito transporta os jogadores para um confronto emocionante com o vilão, capturando a essência da rivalidade. ',
+        copa: 'Copa Coroa',
+        trofeus: 1700,
+        plataforma: 'Nintendo Switch'
+      },
+
 ]
