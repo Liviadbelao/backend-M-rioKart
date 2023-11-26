@@ -1,10 +1,11 @@
 import { Router } from "express";
-import { getMapas } from "../controller/mapas.controller.js";
+import { getMapas,
+getMapasId, criarMapas } from "../controller/mapas.controller.js";
 const mapasRouter = Router();
 
-mapasRouter.post("/",)
+mapasRouter.post("/", criarMapas)
 mapasRouter.get("/",  getMapas )
-mapasRouter.get("/:id", )
+mapasRouter.get("/:id", getMapasId)
 
 mapasRouter.put("/:id", )
 mapasRouter.delete("/:id", )

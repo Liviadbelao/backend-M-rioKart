@@ -439,3 +439,4 @@ const mapas = [
       },
 
 ]
+export default mapas
