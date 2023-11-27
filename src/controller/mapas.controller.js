@@ -5,7 +5,7 @@ import { MapasLista } from "../models/mapasList.js";
 const lista = new MapasLista();
 lista.addMapa(mapas)
 export const getMapas = (req, res) => {
-    let map = mapas;
+    
 
     const listaMapas = lista.getTodosMapas()
     return res.status(200).send({ listaMapas })

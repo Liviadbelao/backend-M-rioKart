@@ -1,5 +1,8 @@
+import { v4 as uuidv4 } from "uuid";
+
 const mapas = [
     {
+        id: uuidv4(),
         nome: 'Circuito Mario',
         imagem: '/images/circuitomario',
         descricao: 'Uma pista simples com curvas suaves, item boxes e alguns obstáculos.',
@@ -9,6 +12,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Mansão do Mario',
         imagem: '/images/mansaodomario',
         descricao: 'Uma pista assombrada com corredores estreitos, escadas e fantasmas que podem atrapalhar os jogadores.',
@@ -17,7 +21,8 @@ const mapas = [
         trofeus: 600,
         plataforma: 'Nintendo Switch'
       },
-      {
+      {  
+        id: uuidv4(),
         nome: 'Desfiladeiro Toad',
         imagem: '/images/desfiladeiroad',
         descricao: 'Um desfiladeiro colorido com curvas acentuadas, elevações e até uma seção subaquática.',
@@ -27,6 +32,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Parque Corrida Delfino',
         imagem: '/images/parquecorridadelfino',
         descricao: 'Baseada em Isle Delfino, esta pista apresenta partes subaquáticas e seções em que os jogadores podem usar propulsores.',
@@ -36,6 +42,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Pista Mario',
         imagem: '/images/pistamario',
         descricao: 'Uma pista clássica inspirada nas pistas de corrida tradicionais da série Mario Kart.',
@@ -45,6 +52,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Pântano Venenoso',
         imagem: '/images/pantanovenenoso',
         descricao: 'Uma pista com temática de pântano comum em jogos de aventura, com lama tóxica, pontes estreitas e atalhos através de cogumelos gigantes.',
@@ -54,6 +62,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Duna do Yoshi',
         imagem: '/images/dunadoyoshi',
         descricao: 'Uma pista desértica com dunas móveis, rampas e partes subterrâneas.',
@@ -63,6 +72,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Estádio da Música Electrodrome',
         imagem: '/images/estadiodamusicaelectrodrome',
         descricao: 'Uma pista brilhante e animada com pistas de dança, luzes estroboscópicas e batidas de música que impulsionam os jogadores.',
@@ -72,6 +82,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Circuito Toad',
         imagem: '/images/circuitotoad',
         descricao: 'Um circuito rápido com curvas fechadas e uma seção antigravidade que permite aos jogadores correr de cabeça para baixo.',
@@ -81,6 +92,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Porto de Toad',
         imagem: '/images/portodetoad',
         descricao: 'Uma corrida ao redor de um porto movimentado, com rampas e desvios.',
@@ -90,6 +102,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Estrada da Floresta',
         imagem: '/images/estradadafloresta',
         descricao: 'Uma pista através de uma floresta densa, com curvas sinuosas e trechos estreitos.',
@@ -99,6 +112,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Volante Wario',
         imagem: '/images/volantewario',
         descricao: 'Uma pista que percorre um estádio cheio de rampas, curvas acentuadas e obstáculos.',
@@ -108,6 +122,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Minas Twisted Mansion',
         imagem: '/images/minastwistedmansion',
         descricao: 'Uma corrida assustadora dentro de uma mansão mal-assombrada com corredores estreitos, obstáculos e partes antigravidade.',
@@ -117,6 +132,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Pista de Sherbet',
         imagem: '/images/pistadesherbet',
         descricao: 'Uma pista gelada com curvas fechadas e partes cobertas de gelo.',
@@ -126,6 +142,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Pico de Sherbet',
         imagem: '/images/picodesherbet',
         descricao: 'Uma corrida íngreme por uma montanha coberta de neve, com muitas rampas e curvas perigosas.',
@@ -135,6 +152,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Volante de Mel',
         imagem: '/images/volantedemel',
         descricao: 'Uma pista doce que atravessa um estádio feito de mel, com rampas pegajosas e atalhos.',
@@ -144,6 +162,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Desfiladeiro da Montanha-Russa',
         imagem: '/images/desfiladeiromontanharussa',
         descricao: 'Uma pista de montanha-russa cheia de loopings, quedas íngremes e curvas radicais.',
@@ -153,6 +172,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Pista Donut',
         imagem: '/images/pistadonut',
         descricao: 'Uma pista em formato de rosquinha com curvas fechadas e partes antigravidade.',
@@ -162,6 +182,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Praia de Cheep Cheep',
         imagem: '/images/praiadecheepcheep',
         descricao: 'Uma corrida pela praia com água cristalina, Cheep Cheeps e seções subaquáticas.',
@@ -171,6 +192,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Parque Corrida do Boneco de Neve',
         imagem: '/images/parquecorridabonecodeneve',
         descricao: 'Uma pista com tema de inverno, com partes cobertas de neve, bonecos de neve e rampas geladas.',
@@ -180,6 +202,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Jardim Boreal',
         imagem: '/images/jardimboreal',
         descricao: 'Uma pista que atravessa um jardim coberto de neve, com árvores geladas e terrenos escorregadios.',
@@ -189,6 +212,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Volante Wario',
         imagem: '/images/volantewario',
         descricao: 'Uma corrida por um estádio peculiar de Wario, com obstáculos e surpresas únicas.',
@@ -198,6 +222,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Mina do Céu',
         imagem: '/images/minadoceu',
         descricao: 'Uma mina suspensa no céu com caminhos estreitos e seções antigravidade.',
@@ -207,6 +232,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Estrada do Céu',
         imagem: '/images/estradadoceu',
         descricao: 'Uma estrada flutuante no céu com caminhos sinuosos e obstáculos desafiadores.',
@@ -219,6 +245,7 @@ const mapas = [
       // próximos cards
 
       {
+        id: uuidv4(),
         nome: 'Rota Céu',
         imagem: '/images/circuitomario',
         descricao: 'Uma pista que sobe para o céu com caminhos estreitos e elevações.',
@@ -228,6 +255,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Circuito Yoshi',
         imagem: '/images/mansaodomario',
         descricao: 'Um circuito com temática de Yoshi, com caminhos sinuosos e uma seção antigravidade.',
@@ -237,6 +265,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Mansão do Cidadão',
         imagem: '/images/desfiladeiroad',
         descricao: 'Uma mansão com salas extravagantes, corredores estreitos e uma seção antigravidade.',
@@ -246,6 +275,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Estádio do Animal Crossing',
         imagem: '/images/parquecorridadelfino',
         descricao: 'Baseada na série Animal Crossing, esta pista muda de estação conforme as voltas, afetando a jogabilidade.',
@@ -255,6 +285,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Pista da Coroa',
         imagem: '/images/pistamario',
         descricao: 'Uma pista luxuosa dentro do Castelo da Peach, com caminhos elaborados e uma seção antigravidade.',
@@ -264,6 +295,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Vulcão Grumble',
         imagem: '/images/pantanovenenoso',
         descricao: 'Uma pista vulcânica com lava, rampas e partes subterrâneas.',
@@ -273,6 +305,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Desfiladeiro N64 Rainbow Road',
         imagem: '/images/dunadoyoshi',
         descricao: 'Uma versão modernizada da icônica Rainbow Road do Nintendo 64, com seções antigravidade.',
@@ -282,6 +315,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Parque Corrida da Pista Ice',
         imagem: '/images/estadiodamusicaelectrodrome',
         descricao: 'Um parque de diversões de inverno com gelo, rampas e partes subterrâneas.',
@@ -291,6 +325,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Circuito Excitebike',
         imagem: '/images/circuitotoad',
         descricao: 'Baseada no jogo Excitebike, esta pista tem saltos e rampas inspirados no jogo de motocross.',
@@ -300,6 +335,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Floresta do Dragão',
         imagem: '/images/portodetoad',
         descricao: 'Uma pista florestal com caminhos estreitos e obstáculos, incluindo a presença de dragões.',
@@ -309,6 +345,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Estádio da Música Hyrule',
         imagem: '/images/estradadafloresta',
         descricao: 'Baseada na série The Legend of Zelda, esta pista inclui elementos da franquia, como rupees e Triforces.',
@@ -318,6 +355,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Cidade das Luzes',
         imagem: '/images/volantewario',
         descricao: 'Uma pista urbana noturna com muitas luzes brilhantes, rampas e caminhos elevados.',
@@ -330,6 +368,7 @@ const mapas = [
       //Copa Leve
 
       {
+        id: uuidv4(),
         nome: 'Circuito do Pára-Quedas',
         imagem: '/images/minastwistedmansion',
         descricao: 'Uma pista situada em um aeroporto, com caminhos elevados e rampas que lembram uma pista de decolagem.',
@@ -339,6 +378,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Água Piscina',
         imagem: '/images/pistadesherbet',
         descricao: 'Uma pista aquática que passa por uma piscina com partes subaquáticas e ondas.',
@@ -348,6 +388,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Porto de Cheep Cheep',
         imagem: '/images/picodesherbet',
         descricao: 'Um porto movimentado com partes subaquáticas, barcos e caminhos estreitos.',
@@ -357,6 +398,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Castelo de Bowser',
         imagem: '/images/volantedemel',
         descricao: 'Uma pista dentro do Castelo de Bowser, com seções antigravidade e obstáculos desafiadores.',
@@ -366,6 +408,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Circuito do Céu',
         imagem: '/images/desfiladeiromontanharussa',
         descricao: 'Uma pista elevada no céu com caminhos estreitos e obstáculos, proporcionando uma experiência emocionante.',
@@ -375,6 +418,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Desfiladeiro do Céu',
         imagem: '/images/pistadonut',
         descricao: 'Um desfiladeiro nas nuvens com curvas acentuadas e partes antigravidade.',
@@ -384,6 +428,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Mina do Céu',
         imagem: '/images/praiadecheepcheep',
         descricao: 'Uma mina suspensa no céu com caminhos estreitos e seções antigravidade.',
@@ -393,6 +438,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Estrada do Céu',
         imagem: '/images/parquecorridabonecodeneve',
         descricao: 'Uma estrada flutuante no céu com caminhos sinuosos e obstáculos desafiadores.',
@@ -402,6 +448,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Estádio de Wario',
         imagem: '/images/jardimboreal',
         descricao: ' Pista cheia de obstáculos malucos e truques, refletindo a personalidade excêntrica de Wario. Terrenos irregulares e surpresas inesperadas mantêm a corrida animada e imprevisível.',
@@ -411,6 +458,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Circuito da Rosalina',
         imagem: '/images/volantewario',
         descricao: 'Uma jornada celestial com paisagens cósmicas. A pista oferece curvas suaves, desafios de gravidade e visuais deslumbrantes, incorporando uma atmosfera mágica e etérea.',
@@ -420,6 +468,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Pista da Música Rainbow Road',
         imagem: '/images/minadoceu',
         descricao: 'Pista festiva suspensa no espaço, rodeada por arco-íris brilhantes. Desafios visuais e uma trilha sonora dinâmica criam uma experiência sensorial única e empolgante.',
@@ -429,6 +478,7 @@ const mapas = [
         plataforma: 'Nintendo Switch'
       },
       {
+        id: uuidv4(),
         nome: 'Castelo de Bowser',
         imagem: '/images/estradadoceu',
         descricao: 'Uma pista épica e intimidante, ambientada nos domínios do vilão Bowser. Corredores enfrentam desafios intensos dentro e ao redor do castelo, incluindo a fúria do próprio Bowser.',
