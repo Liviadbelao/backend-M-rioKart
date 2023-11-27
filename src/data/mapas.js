@@ -81,6 +81,8 @@ const mapas = [
         trofeus: 700,
         plataforma: 'Nintendo Switch'
       },
+
+      
       {
         id: uuidv4(),
         nome: 'Circuito Toad',
