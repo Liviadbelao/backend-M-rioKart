@@ -39,3 +39,30 @@ export const criarMapas = (req, res) => {
 
 }
 
+export const editarMapas = (req, res) =>{
+    const { id } = req.params;
+    let { nome, imagem, descricao, inspiracao, copa, trofeus, plataforma } = req.body;
+    let mapa = lista.getMapaId(id);
+
+
+
+    if (!mapa) {
+        return res.status(404).send({ message: "id não encontrado" });
+    }
+
+
+    const mapaAtualizado = lista.atualizarmapa(id, nome, imagem, descricao, inspiracao, copa, trofeus, plataforma);
+    
+    return res.status(200).send({ message: "roupa atualizada:", mapaAtualizado });
+}
+
+export const deletarMapa = (req, res) =>{
+    const { id } = req.params;
+    const mapa = lista.getMapaId(id)
+    if (!mapa) {
+        return res.status(404).send({ message: "não foi removido corretamente" })
+    }
+    lista.removerMapa(id)
+
+    return res.status(200).send({ messege: "mapa removido", mapa})
+}
