@@ -1,5 +1,6 @@
-import { V4 as uuidv4 } from "uuid";
+import { v4 as uuidv4 } from "uuid";
 
+// Criação do obejeto, com todas as informações que ele contém
 export class Usuario{
     constructor(nome,idade, imagem, descrição,tipo ){
         this.id=uuidv4();
@@ -10,3 +11,4 @@ export class Usuario{
         this.tipo=tipo;
     }
 }
+
