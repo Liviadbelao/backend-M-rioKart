@@ -1,9 +1,10 @@
-import mapas from "../data/mapas.js";
+/* import mapas from "../data/mapas.js"; */
+
 import { Mapas } from "../models/mapas.js";
 import { MapasLista } from "../models/mapasList.js";
 
 const lista = new MapasLista();
-lista.addMapa(mapas)
+/* lista.addMapa(mapas) */
 export const getMapas = (req, res) => {
     
 
@@ -30,6 +31,8 @@ export const criarMapas = (req, res) => {
    
     const mapa = new Mapas(nome, imagem, descricao, inspiracao, copa, trofeus, plataforma)
     lista.addMapa(mapa)
+
+    console.log("ta criando");
     
     return res.status(200).send({ message: "mapa criado", mapa })
 
