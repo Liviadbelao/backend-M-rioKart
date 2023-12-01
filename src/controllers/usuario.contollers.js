@@ -6,7 +6,7 @@ import membros from '../data/membros.js';
 const lista = new usuarioList();
 
 membros.map((membro) => {
-    const novoMembro = new Usuario(membro.nome, membro.idade, membro.tipo, membro.descricao)
+    const novoMembro = new Usuario(membro.nome, membro.avatar, membro.idade, membro.descricao, membro.tipo, membro.imagem)
     lista.addUsuarios(novoMembro)
 })
 
