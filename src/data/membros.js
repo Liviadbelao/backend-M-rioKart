@@ -27,7 +27,7 @@ const membros = [
     },
     {
         nome: "Maria Cancian",
-        avatar: "/cadastroSobreNosteen monkey-PhotoRoom.png-PhotoRoom.png",
+        avatar: "/cadastroSobreNos/teen monkey-PhotoRoom.png-PhotoRoom.png",
         idade: "17",
         descricao: "Aluna do SESI/SENAI - Valinhos. Cursando Desenvolvimento de Sistema, segundo semstre.",
         tipo: "Alun(o)a",
