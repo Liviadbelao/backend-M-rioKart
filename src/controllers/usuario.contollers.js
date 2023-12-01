@@ -42,7 +42,7 @@ export const pegarTodos = (req, res) => {
 }
 
 export const addUsuarios = ((req, res) => {
-    const { nome, idade, imagem, descricao, tipo } = req.body
+    const { nome, avatar, idade, descricao, tipo, imagem } = req.body
     let error = [];
 
     if (nome.length > 40) {
@@ -63,7 +63,7 @@ export const addUsuarios = ((req, res) => {
     if (error.length > 0) {
         return res.status(400).send({ message: error })
     } else {
-        const usuario = new Usuario(nome, idade, imagem, descricao, tipo)
+        const usuario = new Usuario(nome,avatar, idade, descricao, tipo, imagem)
         lista.addUsuarios(usuario);
         return res.status(201).send({ message: "usuariooo criooooouuu", usuario })
     }
