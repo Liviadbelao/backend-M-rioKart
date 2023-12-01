@@ -31,15 +31,16 @@ export class usuarioList {
         return this.usuarios
     }
 
-    editarUsuario(id, nome, idade, imagem, descricao, tipo) {
+    editarUsuario(id, nome, avatar, idade, descricao, tipo, imagem) {
         const usuario = this.pegarTodos(id);
 
         if (usuario) {
             usuario.nome = nome;
+            usuario.avatar = avatar;
             usuario.idade = idade;
-            usuario.imagem = imagem;
             usuario.descricao = descricao;
             usuario.tipo = tipo;
+            usuario.imagem = imagem;
         }
 
         return usuario;
