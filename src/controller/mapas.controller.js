@@ -7,10 +7,26 @@ mapas.map((mapa) => {
     const novoMapa = new Mapas(mapa.nome, mapa.imagem, mapa.descricao, mapa.inspiracao, mapa.copa, mapa.trofeus, mapa.plataforma)
     lista.addMapa(novoMapa);
 })
+console.log(lista)
 export const getMapas = (req, res) => {
 
 
     const listaMapas = lista.getTodosMapas()
+    const { nome } = req.query;
+    const { trofeus } = req.query;
+ 
+
+
+
+    if ( nome, trofeus) {
+
+       listaMapas = lista.pegarTrofeus(trofeus);
+       listaMapas = lista.pegarNome(nome);
+       
+
+    }  else {
+       listaMapas = lista.getTodosMapas();
+    }
     return res.status(200).send({ listaMapas })
 }
 export const getMapasId = (req, res) => {
@@ -45,7 +61,7 @@ export const criarMapas = (req, res) => {
         return res.status(400).send({ message: "trofeus de quantidade invalida"}) 
     }
 
-    if(copa !== "copa folha"&& copa !== "copa flor" && copa !== "copa leve" && copa !== "copa casco" && copa !== "copa seta"&& copa !== "copa estrela"&& copa !== "copa flor e cerejeira"){
+    if(copa !== "copa folha"&& copa !== "copa flor" && copa !== "copa ovo" && copa !== "copa leve" && copa !== "copa casco" && copa !== "copa seta"&& copa !== "copa estrela"&& copa !== "copa flor e cerejeira"){
         return res.status(400).send({ message: "copa inválida"}) 
     }
     lista.addMapa(mapa)
