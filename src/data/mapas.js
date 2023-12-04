@@ -12,7 +12,7 @@ const mapas = [
     trofeus: 500,
     plataforma: 'Nintendo Switch'
   },
-{
+  {
     id: uuidv4(),
     nome: 'Water Park',
     imagem: '/mapasfotos/waterpark.jpg',
@@ -22,7 +22,7 @@ const mapas = [
     trofeus: 500,
     plataforma: 'Nintendo Switch'
   },
-{
+  {
     id: uuidv4(),
     nome: 'Sweet Sweet Canyon',
     imagem: '/mapasfotos/sweetsweetcanyon.webp',
@@ -32,7 +32,7 @@ const mapas = [
     trofeus: 500,
     plataforma: 'Nintendo Switch'
   },
-{
+  {
     id: uuidv4(),
     nome: 'Thwomp Ruin',
     imagem: '/mapasfotos/thwompruin.webp',
@@ -43,7 +43,7 @@ const mapas = [
     plataforma: 'Nintendo Switch'
   },
 
-//Copa Flor
+  //Copa Flor
   {
     id: uuidv4(),
     nome: 'Mario Circuit',
@@ -54,7 +54,7 @@ const mapas = [
     trofeus: 600,
     plataforma: 'Nintendo Switch'
   },
-  {  
+  {
     id: uuidv4(),
     nome: 'Toad Harbor',
     imagem: '/mapasfotos/toadharbor.webp',
@@ -64,7 +64,7 @@ const mapas = [
     trofeus: 600,
     plataforma: 'Nintendo Switch'
   },
-  {  
+  {
     id: uuidv4(),
     nome: 'Twisted Mansion',
     imagem: '/mapasfotos/twistedmansion.webp',
@@ -74,7 +74,7 @@ const mapas = [
     trofeus: 600,
     plataforma: 'Nintendo Switch'
   },
-  {  
+  {
     id: uuidv4(),
     nome: 'Shy Guy Falls',
     imagem: '/mapasfotos/shyguyfalls.webp',
@@ -86,7 +86,7 @@ const mapas = [
   },
 
   //Copa Estrela
-  {  
+  {
     id: uuidv4(),
     nome: 'Sunshine Airport',
     imagem: '/mapasfotos/sunshineairport.webp',
@@ -96,7 +96,7 @@ const mapas = [
     trofeus: 700,
     plataforma: 'Nintendo Switch'
   },
-  {  
+  {
     id: uuidv4(),
     nome: 'Dolphin Shoals',
     imagem: '/mapasfotos/dolphinshoals.webp',
@@ -106,7 +106,7 @@ const mapas = [
     trofeus: 700,
     plataforma: 'Nintendo Switch'
   },
-  {  
+  {
     id: uuidv4(),
     nome: 'Electrodome',
     imagem: '/mapasfotos/electrodome.webp',
@@ -116,7 +116,7 @@ const mapas = [
     trofeus: 700,
     plataforma: 'Nintendo Switch'
   },
-  {  
+  {
     id: uuidv4(),
     nome: 'Mount Wario',
     imagem: '/mapasfotos/mountwario.webp',
@@ -126,9 +126,9 @@ const mapas = [
     trofeus: 700,
     plataforma: 'Nintendo Switch'
   },
-  
+
   //Copa Especial
-  {  
+  {
     id: uuidv4(),
     nome: 'Cloudtop Cruise',
     imagem: '/mapasfotos/cloudtopcruise.webp',
@@ -138,7 +138,7 @@ const mapas = [
     trofeus: 800,
     plataforma: 'Nintendo Switch'
   },
-  {  
+  {
     id: uuidv4(),
     nome: 'Bone Dry Dunes',
     imagem: '/mapasfotos/bonedrydunes.webp',
@@ -148,7 +148,7 @@ const mapas = [
     trofeus: 800,
     plataforma: 'Nintendo Switch'
   },
-  {  
+  {
     id: uuidv4(),
     nome: 'Bowser´s Castle',
     imagem: '/mapasfotos/bowserscastle.webp',
@@ -158,7 +158,7 @@ const mapas = [
     trofeus: 800,
     plataforma: 'Nintendo Switch'
   },
-  {  
+  {
     id: uuidv4(),
     nome: 'Rainbow Road',
     imagem: '/mapasfotos/rainbowroad.webp',
@@ -169,15 +169,61 @@ const mapas = [
     plataforma: 'Nintendo Switch'
   },
 
+  //Copa Ovo
+
+  //Copa Folha
+
   //Copa Casco
-  {  
+  {
     id: uuidv4(),
-    nome: 'Moo Moo Meadows',
+    nome: 'Moo Moo Meadows Wii',
     imagem: '/mapasfotos/moomoomeadows.jfif',
     descricao: 'Proporciona uma experiência de corrida leve e descontraída, destacando-se pela sua atmosfera rural encantadora e elementos interativos, como as vacas que adicionam um toque de humor à competição.',
     inspiracao: 'Temática rural e campestre.',
     copa: 'Copa Casco',
     trofeus: 800,
+    plataforma: 'Nintendo Switch'
+  },
+  {
+    id: uuidv4(),
+    nome: 'Mario Circuit GBA',
+    imagem: '/mapasfotos/mariocircuitgba.webp',
+    descricao: 'Essa pista é um remake de uma pista que apareceu pela primeira vez no jogo "Mario Kart: Super Circuit" para o Game Boy Advance.',
+    inspiracao: 'Versão expandida do Mario Kart 8 original',
+    copa: 'Copa Casco',
+    trofeus: 800,
+    plataforma: 'Nintendo Switch'
+  },
+  {
+    id: uuidv4(),
+    nome: 'Cheep Cheep Beach DS',
+    imagem: '/mapasfotos/cheepcheepbeach.webp',
+    descricao: 'A pista é conhecida por sua temática de praia e a presença dos Cheep Cheeps, que são peixes comuns no universo Mario.',
+    inspiracao: 'Praia tropical.',
+    copa: 'Copa Casco',
+    trofeus: 800,
+    plataforma: 'Nintendo Switch'
+  },
+  {
+    id: uuidv4(),
+    nome: 'Toad´s Turnpike N64',
+    imagem: '/mapasfotos/Toadsturnpike.webp',
+    descricao: '"Toads Turnpike" é lembrado por sua abordagem única, trazendo um cenário urbano realista para o mundo lúdico de Mario Kart, e desafiando os jogadores com obstáculos incomuns para uma pista de kart.',
+    inspiracao: 'Praia tropical.',
+    copa: 'Copa Casco',
+    trofeus: 800,
+    plataforma: 'Nintendo Switch'
+  },
+
+  //Copa Banana
+  {
+    id: uuidv4(),
+    nome: 'Dry Dry Desert',
+    imagem: '/mapasfotos/drydrydesert.webp',
+    descricao: ' Ela é ambientada em um deserto seco e tem características distintas que a tornam única.',
+    inspiracao: 'Deserto.',
+    copa: 'Copa Banana',
+    trofeus: 1200,
     plataforma: 'Nintendo Switch'
   },
 ]
