@@ -11,7 +11,7 @@ console.log(lista)
 export const getMapas = (req, res) => {
 
 
-    const listaMapas = lista.getTodosMapas()
+    let listaMapas = lista.getTodosMapas()
     const { nome } = req.query;
     const { trofeus } = req.query;
  
@@ -54,14 +54,14 @@ export const criarMapas = (req, res) => {
     if(nome.length < 3|| nome.length > 20 ){
         return res.status(400).send({ message: "nome de tamanho invalido"}) 
     }
-    if(descricao.length < 20|| descricao.length > 500 ){
+    if(descricao.length < 10|| descricao.length > 500 ){
         return res.status(400).send({ message: "descrição de tamanho invalido"}) 
     }
     if(trofeus < 500|| trofeus > 5000 ){
         return res.status(400).send({ message: "trofeus de quantidade invalida"}) 
     }
 
-    if(copa !== "copa folha"&& copa !== "copa flor" && copa !== "copa ovo" && copa !== "copa leve" && copa !== "copa casco" && copa !== "copa seta"&& copa !== "copa estrela"&& copa !== "copa flor e cerejeira"){
+    if(copa !== "Copa Folha"&& copa !== "copa flor" && copa !== "copa ovo" && copa !== "copa leve" && copa !== "copa casco" && copa !== "copa seta"&& copa !== "copa estrela"&& copa !== "copa flor e cerejeira"){
         return res.status(400).send({ message: "copa inválida"}) 
     }
     lista.addMapa(mapa)
