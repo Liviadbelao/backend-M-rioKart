@@ -12,7 +12,13 @@ export class MapasLista {
     getMapaId(id) {
         return this.mapas.find((mapa) => mapa.id == id)
     }
-
+    pegarNome(nome) {
+        return this.mapas.find((mapa) => mapa.nome == nome)
+    }
+    pegarTrofeus(trofeus) {
+       return  this.mapas.find((roupa) => roupa.trofeus == trofeus )
+        
+    }
 
     atualizarmapa(id, nome, imagem, descricao, inspiracao, copa, trofeus, plataforma) {
         const mapa = this.getMapaId(id);
