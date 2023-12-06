@@ -6,7 +6,7 @@ import mapasRouter from './mapas.routes.js'
 const rotas = Router();
 
 rotas.use("/mapas", mapasRouter);
-rotas.use("/mapas", usuario);
+rotas.use("/usuario", usuario);
 
 
 rotas.get("/", (req, res)=>{
