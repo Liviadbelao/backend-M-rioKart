@@ -168,8 +168,28 @@ const mapas = [
     trofeus: 800,
     plataforma: 'Nintendo Switch'
   },
-
+  
   //Copa Ovo
+  {
+    id: uuidv4(),
+    nome: 'Yoshi Circuit',
+    imagem: '/mapasfotos/yoshicircuit.webp',
+    descricao: 'É notável por seu layout em formato de ovo, que é uma referência ao ovo de Yoshi.',
+    inspiracao: 'Personagem Yoshi.',
+    copa: 'Copa Ovo',
+    trofeus: 900,
+    plataforma: 'Nintendo Switch'
+  },
+  {
+    id: uuidv4(),
+    nome: 'Excitebike Arena',
+    imagem: '/mapasfotos/',
+    descricao: 'É bastante único e se destaca por sua aparência minimalista, com obstáculos simples e um terreno plano.',
+    inspiracao: 'Inspiração no jogo "Excitebike".',
+    copa: 'Copa Ovo',
+    trofeus: 900,
+    plataforma: 'Nintendo Switch'
+  },
 
   //Copa Folha
 
@@ -220,11 +240,129 @@ const mapas = [
     id: uuidv4(),
     nome: 'Dry Dry Desert',
     imagem: '/mapasfotos/drydrydesert.webp',
-    descricao: ' Ela é ambientada em um deserto seco e tem características distintas que a tornam única.',
+    descricao: 'Ela é ambientada em um deserto seco e tem características distintas que a tornam única.',
     inspiracao: 'Deserto.',
     copa: 'Copa Banana',
     trofeus: 1200,
     plataforma: 'Nintendo Switch'
   },
+  {
+    id: uuidv4(),
+    nome: 'Donuts Plaints 3',
+    imagem: '/mapasfotos/donutplaints3.webp',
+    descricao: 'A pista Donut Plains 3 apresenta um ambiente colorido e nostálgico, com uma trilha que percorre campos, lagos e uma paisagem característica de jogos da série Mario.',
+    inspiracao: 'Jogos mais antigos da franquia.',
+    copa: 'Copa Banana',
+    trofeus: 1200,
+    plataforma: 'Nintendo Switch'
+  },
+  {
+    id: uuidv4(),
+    nome: 'Royal Raceway',
+    imagem: '/mapasfotos/royalraceway.webp',
+    descricao: 'Ela é conhecida por seu cenário real, onde os jogadores correm por uma pista situada em torno de um castelo real.',
+    inspiracao: 'Inspirada na pista homônima que apareceu pela primeira vez no jogo Mario Kart 64.',
+    copa: 'Copa Banana',
+    trofeus: 1200,
+    plataforma: 'Nintendo Switch'
+  },
+  {
+    id: uuidv4(),
+    nome: 'DK Jungle',
+    imagem: '/mapasfotos/dkjungle.webp',
+    descricao: 'Pista é ambientada em uma selva exuberante, com cipós, barris e outros elementos relacionados ao mundo de Donkey Kong.',
+    inspiracao: 'Baseada no universo de Donkey Kong.',
+    copa: 'Copa Banana',
+    trofeus: 1200,
+    plataforma: 'Nintendo Switch'
+  },
+  
+  //Copa Folha
+  {
+    id: uuidv4(),
+    nome: 'Wario Stadium',
+    imagem: '/mapasfotos/wariostadium.webp',
+    descricao: 'Apresenta grandes saltos, curvas acentuadas e rampas que oferecem oportunidades para manobras acrobáticas.',
+    inspiracao: 'Personagem Wario.',
+    copa: 'Copa Folha',
+    trofeus: 1300,
+    plataforma: 'Nintendo Switch'
+  },
+  {
+    id: uuidv4(),
+    nome: 'Sherbet Land',
+    imagem: '/mapasfotos/sherbetland.webp',
+    descricao: 'A pista é coberta de neve e gelo, com uma série de curvas desafiadoras e obstáculos relacionados ao ambiente gelado.',
+    inspiracao: 'Elementos do vasto universo da Nintendo.',
+    copa: 'Copa Folha',
+    trofeus: 1300,
+    plataforma: 'Nintendo Switch'
+  },
+  {
+    id: uuidv4(),
+    nome: 'Music Park',
+    imagem: '/mapasfotos/musicpark.webp',
+    descricao: 'Essa pista é notável por sua temática musical e elementos interativos.',
+    inspiracao: 'Temática musical única.',
+    copa: 'Copa Folha',
+    trofeus: 1300,
+    plataforma: 'Nintendo Switch'
+  },
+  {
+    id: uuidv4(),
+    nome: 'Yoshi Valley',
+    imagem: '/mapasfotos/yoshivalley.webp',
+    descricao: 'O terreno acidentado, repleto de colinas, vales e quedas, adiciona um elemento de imprevisibilidade à corrida.',
+    inspiracao: 'Personagem Yoshi.',
+    copa: 'Copa Folha',
+    trofeus: 1300,
+    plataforma: 'Nintendo Switch'
+  },
+  
+  //Copa Relâmpago
+  {
+    id: uuidv4(),
+    nome: 'Tick Tock Clock',
+    imagem: '/mapasfotos/ticktockclock.webp',
+    descricao: 'O mapa é ambientado em um grande relógio e oferece uma experiência de corrida única devido à sua mecânica em constante movimento.',
+    inspiracao: 'Ambiente de relógio ou maquinaria.',
+    copa: 'Copa Relâmpago',
+    trofeus: 1400,
+    plataforma: 'Nintendo Switch'
+  },
+  {
+    id: uuidv4(),
+    nome: 'Piranha Plant Pipeway',
+    imagem: '/mapasfotos/piranhaplantpipeway.webp',
+    descricao: 'A pista é construída como uma tubulação, e os jogadores correm através de uma série de canos e passagens subterrâneas.',
+    inspiracao: 'Plantas Piranha.',
+    copa: 'Copa Relâmpago',
+    trofeus: 1400,
+    plataforma: 'Nintendo Switch'
+  },
+  {
+    id: uuidv4(),
+    nome: 'Grumble Volcano',
+    imagem: '/mapasfotos/grumblevolcano.webp',
+    descricao: 'É conhecida por sua dinâmica e desafiadora jogabilidade. A corrida se desenrola em torno e através de uma série de vulcões ativos.',
+    inspiracao: 'Ambiente vulcânico e tumultuado.',
+    copa: 'Copa Relâmpago',
+    trofeus: 1400,
+    plataforma: 'Nintendo Switch'
+  },
+  {
+    id: uuidv4(),
+    nome: 'Rainbow Road N64',
+    imagem: '/mapasfotos/rainbowroad.webp',
+    descricao: 'O layout da pista "Rainbow Road" é frequentemente caracterizado por trilhas estreitas e curvas acentuadas, tornando-o um dos mapas mais desafiadores da série.',
+    inspiracao: 'Cenário espacial e arco-íris.',
+    copa: 'Copa Relâmpago',
+    trofeus: 1400,
+    plataforma: 'Nintendo Switch'
+  },
+
+  //Copa Triforce
+
+  //Copa Sino
 ]
 export default mapas
