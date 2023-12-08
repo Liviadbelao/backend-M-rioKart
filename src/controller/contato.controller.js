@@ -16,7 +16,7 @@ export const getContato = (req, res) => {
     }  else {
        listaContato = lista.getTodosContato();
     }
-    return res.status(200).send({ listaContato })
+    return res.status(200).send(listaContato)
 }
 export const getContatoId = (req, res) => {
 
@@ -37,21 +37,21 @@ export const criarContato = (req, res) => {
   
     const contacto = new Contato(nome, email, telefone, mensagem)
    
-    if(nome == ""|| email == "" || telefone == "" || mensagem == "" ){
+    if(nome == ""){
         return res.status(400).send({ message: "todos os campos devem estar preenchidos"}) 
     }
     if(nome < 3|| nome > 20 ){
         return res.status(400).send({ message: "nome de tamanho invalido"}) 
     }
-    if(email < 10|| email > 500 ){
+ /*    if(email < 10|| email > 500 ){
         return res.status(400).send({ message: "email invalido"}) 
     }
-    /*if(telefone < 8|| telefone > 10 ){
+    if(telefone < 8|| telefone > 10 ){
         return res.status(400).send({ message: "telefone invalido"}) 
-    }*/
+    }
     if(mensagem < 3|| mensagem > 20 ){
         return res.status(400).send({ message: "mensagem muito curta"}) 
-    }
+    } */
     lista.addContacto(contacto)
 
     console.log("ta criando");
@@ -63,7 +63,7 @@ export const criarContato = (req, res) => {
 
 export const editarContato = (req, res) =>{
     const { id } = req.params;
-    let { nome, imagem, descricao, inspiracao, copa, trofeus, plataforma } = req.body;
+    let { nome } = req.body;
     let contacto = lista.getContactoId(id);
 
 
@@ -73,7 +73,7 @@ export const editarContato = (req, res) =>{
     }
 
 
-    const contactoAtualizado = lista.atualizarcontacto(id, nome, email, telefone, mensagem);
+    const contactoAtualizado = lista.atualizarcontacto(id, nome);
     
     return res.status(200).send({ message: "roupa atualizada:", contactoAtualizado });
 }
@@ -81,6 +81,7 @@ export const editarContato = (req, res) =>{
 export const deletarContacto = (req, res) =>{
     const { id } = req.params;
     const contacto = lista.getContactoId(id)
+    console.log(id)
     if (!contacto) {
         return res.status(404).send({ message: "não foi removido corretamente" })
     }

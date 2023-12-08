@@ -31,17 +31,13 @@ export class UsuarioList {
         return this.usuarios
     }
 
-    editarUsuario(id, nome,avatar, idade, descricao, tipo, imagem) {
+    editarUsuario(id, nome) {
         const usuario = this.pegarUsuariosId(id);
         console.log("BBBBBBBBBBBBBBBBBBBBBBBBBB");
-        console.log(id, nome,avatar, idade, descricao, tipo, imagem);
+        console.log(id, nome);
         if (usuario) {
             usuario.nome = nome;
-            usuario.avatar = avatar;
-            usuario.idade = idade;
-            usuario.descricao = descricao;
-            usuario.tipo = tipo;
-            usuario.imagem = imagem;
+            
         }
 
         return usuario;
