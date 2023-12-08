@@ -6,15 +6,15 @@ const membros = [
         idade: "17",
         descricao: "Aluna do SESI/SENAI - Valinhos. Cursando Desenvolvimento de Sistema, segundo semstre.",
         tipo: "Alun(o)a",
-        imagem: "https://i.pinimg.com/originals/55/85/82/558582405e0df783d1518da245ee73c5.jpg"
+        imagem: "/membros/giu2.jpg"
     },
     { 
         nome: "Manuela Liberato",
         avatar: "/cadastroSobreNos/princesa peach-PhotoRoom.png-PhotoRoom.png",
-        idade: "16",
+        idade: "17",
         descricao: "Aluna do SESI/SENAI - Valinhos. Cursando Desenvolvimento de Sistema, segundo semstre.",
         tipo: "Alun(o)a",
-        imagem: "https://i.pinimg.com/originals/55/85/82/558582405e0df783d1518da245ee73c5.jpg"
+        imagem: "/membros/manu.jpg"
     },
     {
         nome: "Nickolas Mamede",
@@ -22,16 +22,17 @@ const membros = [
         idade: "17",
         tipo: "Alun(o)a",
         descricao: "Aluno do SESI/SENAI - Valinhos. Cursando Desenvolvimento de Sistema, segundo semstre.",
-        imagem: "https://i.pinimg.com/originals/55/85/82/558582405e0df783d1518da245ee73c5.jpg"
-
+        imagem: "/membros/nico.jpg"
     },
+
+
     {
         nome: "Maria Cancian",
         avatar: "/cadastroSobreNos/teen monkey-PhotoRoom.png-PhotoRoom.png",
         idade: "17",
         descricao: "Aluna do SESI/SENAI - Valinhos. Cursando Desenvolvimento de Sistema, segundo semstre.",
         tipo: "Alun(o)a",
-        imagem: "https://i.pinimg.com/originals/55/85/82/558582405e0df783d1518da245ee73c5.jpg"
+        imagem: "/membros/cancian.jpg"
 
     },
     {
@@ -40,7 +41,7 @@ const membros = [
         avatar: "/cadastroSobreNos/dick_vigarista-removebg-preview.png",
         descricao: "Aluna do SESI/SENAI - Valinhos. Cursando Desenvolvimento de Sistema, segundo semstre.",
         tipo: "Alun(o)a",
-        imagem: "https://i.pinimg.com/originals/55/85/82/558582405e0df783d1518da245ee73c5.jpg"
+        imagem: "/membros/mrita2.jpg"
 
     },
     {
@@ -49,7 +50,7 @@ const membros = [
         idade: "17",
         descricao: "Aluna do SESI/SENAI - Valinhos. Cursando Desenvolvimento de Sistema, segundo semstre.",
         tipo: "Alun(o)a",
-        imagem: "https://i.pinimg.com/originals/55/85/82/558582405e0df783d1518da245ee73c5.jpg"
+        imagem: "/membros/liv.jpg"
 
     }
 
