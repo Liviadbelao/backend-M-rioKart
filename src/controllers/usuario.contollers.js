@@ -30,11 +30,9 @@ export const pegarTodos = (req, res) => {
     if (idade) {
         usuarios = lista.pegarPeloIdade(Number(idade))
     }
-
     if (usuarios.length < 0) {
         return res.status(400).json({ message: "USuario não enco" })
-
-
+    
     } else {
         let contador = usuarios.length
         return res.status(200).send({ contador, usuarios })
