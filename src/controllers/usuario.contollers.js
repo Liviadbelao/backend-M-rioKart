@@ -46,7 +46,7 @@ export const addUsuarios = (req, res) => {
 
     let error = [];
 
-    if (nome.length < 3 || nome.length >20) {
+    if (nome.length < 3 || nome.length > 20) {
         error.push('O tamanho do nome deve ser entre 3 a 20 caracteres')
     }
     if (descricao.length < 10 || descricao.length > 100) {
@@ -76,7 +76,7 @@ export const editarUsuario = (req, res) => {
     let { nome, avatar, idade, descricao, tipo, imagem } = req.body;
 
     console.log("AAAAAAAAAAAAAA");
-    console.log(id, nome, avatar,idade, descricao, tipo, imagem);
+    console.log(id, nome, avatar, idade, descricao, tipo, imagem);
 
     let error = [];
 
@@ -87,7 +87,7 @@ export const editarUsuario = (req, res) => {
         error.push("o descricao deve ter menos que 40 caracteres")
     }
 
-    if (idade.length < 13) {
+    if (idade < 13) {
         error.push("o usuario deve ser maior de 13 anos")
     }
 
