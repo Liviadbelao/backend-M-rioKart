@@ -6,19 +6,46 @@ export class MapasLista {
     addMapa(mapa) {
         this.mapas.push(mapa)
     }
-    getTodosMapas() {
+    getTodosMapas(dados) {
+        console.log(dados);
+
+        const {nome, trofeus, copa} = dados;
+
+        if(nome || trofeus || copa){
+            //faco o filtro aqui
+            return this.getMapasByNomeTrofeusCopas(nome, trofeus, copa);
+        }
+
         return this.mapas
     }
+
+    getMapasByNomeTrofeusCopas(nome, trofeus, copa){
+        console.log("consoledaClass",nome, trofeus, copa)
+        if(nome){
+            nome = nome.toUpperCase()
+        }
+        if(trofeus){
+            trofeus = parseInt(trofeus);
+        }
+        if(copa){
+            copa = copa.toUpperCase()
+        }
+
+        const resultado = this.mapas.filter((mapa)=>{
+            const nomeCondicao = nome == undefined || mapa.nome.toUpperCase().includes(nome);
+            const trofeusCondicao = trofeus == undefined || mapa.trofeus == trofeus;
+            const copaCondicao = copa == undefined || mapa.copa.toUpperCase() == copa;
+            console.log( mapa.copa , copa)
+            console.log({copaCondicao})
+            return nomeCondicao && trofeusCondicao && copaCondicao;
+        });
+
+        return resultado;
+    }
     getMapaId(id) {
-        return this.mapas.find((mapa) => mapa.id == id)
+        return this.mapas.find((mapa) => mapa.id === id)
     }
-    pegarNome(nome) {
-        return this.mapas.find((mapa) => mapa.nome == nome)
-    }
-    pegarTrofeus(trofeus) {
-       return  this.mapas.find((roupa) => roupa.trofeus == trofeus )
-        
-    }
+
 
     atualizarmapa(id, nome, imagem, descricao, inspiracao, copa, trofeus, plataforma) {
         const mapa = this.getMapaId(id);

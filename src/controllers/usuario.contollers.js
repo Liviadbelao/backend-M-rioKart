@@ -46,11 +46,11 @@ export const addUsuarios = (req, res) => {
 
     let error = [];
 
-    if (nome.length > 40) {
-        error.push("o nome deve ter menos que 40 caracteres")
+    if (nome.length < 3 || nome.length >20) {
+        error.push('O tamanho do nome deve ser entre 3 a 20 caracteres')
     }
-    if (descricao.length > 40) {
-        error.push("o descricao deve ter menos que 40 caracteres")
+    if (descricao.length < 10 || descricao.length > 100) {
+        error.push('O tamanho da descrição deve ser entre 10 a 100 caracteres')
     }
 
     if (idade < 13) {
