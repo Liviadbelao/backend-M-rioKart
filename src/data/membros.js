@@ -35,7 +35,7 @@ const membros = [
 
     },
     {
-        nome: "Maria Rita Gomes",
+        nome: "Maria Rita",
         idade: "16",
         avatar: "/cadastroSobreNos/dick_vigarista-removebg-preview.png",
         descricao: "Aluna do SESI/SENAI - Valinhos. Cursando Desenvolvimento de Sistema, segundo semstre.",

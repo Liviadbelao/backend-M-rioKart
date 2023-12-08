@@ -1,9 +1,9 @@
 import { Usuario } from '../models/Usuarios/Usuarios.js'
-import { usuarioList } from '../models/usuarios/usuariosList.js'
+import { UsuarioList } from '../models/Usuarios/usuariosList.js'
 import membros from '../data/membros.js';
 
 
-const lista = new usuarioList();
+const lista = new UsuarioList();
 
 membros.map((membro) => {
     const novoMembro = new Usuario(membro.nome, membro.avatar, membro.idade, membro.descricao, membro.tipo, membro.imagem)
@@ -39,8 +39,9 @@ export const pegarTodos = (req, res) => {
     }
 }
 
-export const addUsuarios = ((req, res) => {
+export const addUsuarios = (req, res) => {
     const { nome, avatar, idade, descricao, tipo, imagem } = req.body
+
     let error = [];
 
     if (nome.length > 40) {
@@ -54,23 +55,26 @@ export const addUsuarios = ((req, res) => {
         error.push("o usuario deve ser maior de 13 anos")
     }
 
-/*     if (!imagem.match(/(https?:\/\/.*.(?:png|jpg|jpeg))/i)) {
-        error.push("A imagem deve um URL válido que termine em png, jpg ou jpeg.")
-    } */
+    /*     if (!imagem.match(/(https?:\/\/.*.(?:png|jpg|jpeg))/i)) {
+            error.push("A imagem deve um URL válido que termine em png, jpg ou jpeg.")
+        } */
 
     if (error.length > 0) {
         return res.status(400).send({ message: error })
     } else {
-        const usuario = new Usuario(nome,avatar, idade, descricao, tipo, imagem)
+        const usuario = new Usuario(nome, avatar, idade, descricao, tipo, imagem)
         lista.addUsuarios(usuario);
         return res.status(201).send({ message: "usuariooo criooooouuu", usuario })
     }
 
-})
+}
 
-export const editarUsuario = ((req, res) => {
+export const editarUsuario = (req, res) => {
     const { id } = req.params;
-    const { nome, idade, imagem, descricao, tipo } = req.body;
+    let { nome, avatar, idade, descricao, tipo, imagem } = req.body;
+
+    console.log("AAAAAAAAAAAAAA");
+    console.log(id, nome, avatar,idade, descricao, tipo, imagem);
 
     let error = [];
 
@@ -93,17 +97,12 @@ export const editarUsuario = ((req, res) => {
 
     if (error.length) {
         return res.status(400).send({ message: error })
-    } else {
-        const usuario = new Usuario(id, nome, idade, imagem, descricao, tipo)
-        lista.editarUsuario(usuario);
-        return res.status(200).send({ message: `Atualizou boy`, usuario })
-
     }
+    console.log("Deu CEEEEEEEEEEERRRRRRRTOOOOOOOOOO");
+    const usuarioAtualizado = lista.editarUsuario(id, nome, avatar, idade, descricao, tipo, imagem)
+    return res.status(200).send({ message: `Atualizou boy`, usuarioAtualizado })
 
-
-
-
-})
+}
 
 export const deletarUsuario = ((req, res) => {
     const { id } = req.params;

@@ -1,4 +1,4 @@
-export class usuarioList {
+export class UsuarioList {
     // Array dos usuários
     constructor() {
         this.usuarios = [];
@@ -11,29 +11,30 @@ export class usuarioList {
 
     }
 
-    pegarPeloNome(nome){
-        return this.usuarios.filter((usuario)=> usuario.nome === nome);
+    pegarPeloNome(nome) {
+        return this.usuarios.filter((usuario) => usuario.nome === nome);
     }
-    pegarPeloTipo(tipo){
-        return this.usuarios.filter((usuario)=> usuario.tipo === tipo);
+    pegarPeloTipo(tipo) {
+        return this.usuarios.filter((usuario) => usuario.tipo === tipo);
     }
 
-    pegarPeloIdade(idade){
-        return this.usuarios.filter((usuario)=> usuario.idade === idade);
+    pegarPeloIdade(idade) {
+        return this.usuarios.filter((usuario) => usuario.idade === idade);
     }
 
 
     pegarUsuariosId(id) {
-        return this.usuarios.filter((usuario) => usuario.id === id)
+        return this.usuarios.find((usuario) => usuario.id === id)
     }
 
     pegarTodos() {
         return this.usuarios
     }
 
-    editarUsuario(id, nome, avatar, idade, descricao, tipo, imagem) {
-        const usuario = this.pegarTodos(id);
-
+    editarUsuario(id, nome,avatar, idade, descricao, tipo, imagem) {
+        const usuario = this.pegarUsuariosId(id);
+        console.log("BBBBBBBBBBBBBBBBBBBBBBBBBB");
+        console.log(id, nome,avatar, idade, descricao, tipo, imagem);
         if (usuario) {
             usuario.nome = nome;
             usuario.avatar = avatar;
@@ -53,7 +54,7 @@ export class usuarioList {
             console.log('nao deu')
         }
         console.log(id);
-       
+
         this.usuarios = this.usuarios.filter((user) => user.id !== id)
     }
 }
