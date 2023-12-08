@@ -13,6 +13,8 @@ export const getMapas = (req, res) => {
 
     const { nome, trofeus, copa } = req.query;
 
+    console.log(nome);
+
     const dados = {
         nome,
         trofeus,
@@ -92,7 +94,7 @@ export const criarMapas = (req, res) => {
 
     lista.addMapa(mapa)
 
-    console.log("ta criando");
+    //console.log("ta criando");
 
     return res.status(200).send({ message: "mapa criado", mapa })
 

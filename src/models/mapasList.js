@@ -7,11 +7,10 @@ export class MapasLista {
         this.mapas.push(mapa)
     }
     getTodosMapas(dados) {
-        console.log(dados);
 
-        const {nome, trofeus, copa} = dados;
+        const { nome, trofeus, copa } = dados;
 
-        if(nome || trofeus || copa){
+        if (nome || trofeus || copa) {
             //faco o filtro aqui
             return this.getMapasByNomeTrofeusCopas(nome, trofeus, copa);
         }
@@ -19,24 +18,23 @@ export class MapasLista {
         return this.mapas
     }
 
-    getMapasByNomeTrofeusCopas(nome, trofeus, copa){
-        console.log("consoledaClass",nome, trofeus, copa)
-        if(nome){
+    getMapasByNomeTrofeusCopas(nome, trofeus, copa) {
+        //console.log("//consoledaClass",nome, trofeus, copa)
+        if (nome) {
             nome = nome.toUpperCase()
         }
-        if(trofeus){
+        if (trofeus) {
             trofeus = parseInt(trofeus);
         }
-        if(copa){
+        if (copa) {
             copa = copa.toUpperCase()
         }
 
-        const resultado = this.mapas.filter((mapa)=>{
-            const nomeCondicao = nome == undefined || mapa.nome.toUpperCase().includes(nome);
+        const resultado = this.mapas.filter((mapa) => {
+            const nomeCondicao = nome == undefined || mapa.nome.toUpperCase() == nome;
             const trofeusCondicao = trofeus == undefined || mapa.trofeus == trofeus;
             const copaCondicao = copa == undefined || mapa.copa.toUpperCase() == copa;
-            console.log( mapa.copa , copa)
-            console.log({copaCondicao})
+            //console.log({nomeCondicao})
             return nomeCondicao && trofeusCondicao && copaCondicao;
         });
 
