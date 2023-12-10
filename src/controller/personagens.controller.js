@@ -10,7 +10,7 @@ export const getPersonagens = (req, res) => {
     let listaP = listaPs.getTodosPersonagens();
 
     return res.status(200).send({
-      message: listaPs
+      message: listaP
     })
 }
 
