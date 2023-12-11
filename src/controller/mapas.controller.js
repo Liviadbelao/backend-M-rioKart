@@ -58,7 +58,7 @@ export const criarMapas = (req, res) => {
         return res.status(400).send({ message: "descrição de tamanho invalido"}) 
     }
     if(trofeus < 500|| trofeus > 5000 ){
-        return res.status(400).send({ message: "trofeus de quantidade invalida"}) 
+        return res.status(400).send({ message: "A quantidade de troféus tem que ser entre 500 a 5000"}) 
     }
 
     if(copa !== "Copa Folha"&& copa !== "copa flor" && copa !== "copa ovo" && copa !== "copa leve" && copa !== "copa casco" && copa !== "copa seta"&& copa !== "copa estrela"&& copa !== "copa flor e cerejeira"){
