@@ -17,14 +17,13 @@ export const pegarUsuariosId = (req, res) => {
     return res.status(200).send({ usuario })
 }
 
-
 const urlValida = (imagem) => {
-    if (imagem.match(/\.(jpeg|jpg|gif|png)$/) != null) {
+    if (imagem && imagem.match(/\.(jpeg|jpg|gif|png)$/) !== null) {
         return true;
     } else {
         return false;
     }
-}
+};
 
 
 export const pegarTodos = (req, res) => {
@@ -65,16 +64,12 @@ export const addUsuarios = (req, res) => {
     if (idade < 13) {
         error.push("o usuario deve ser maior de 13 anos")
     }
-    if(!imagem) {
-        console.log('Preencha o campo imagem')
-        setErroImagem('Preencha o campo Imagem')
-      } else if (!urlValida(imagem)) {
-        console.log('A imagem precisa ser valida')
-        setErroImagem('A imagem precisa ter um formato válido: .jpeg/.jpg/.gif/.png')
-      } else {
-        console.log('Limpou');
-        setErroImagem('');
-      }
+    if (imagem == '') {
+        error.push('Preencha o campo Imagem')
+    } else if (!urlValida(imagem)) {
+        error.push('A imagem precisa ter um formato válido: .jpeg/.jpg/.gif/.png')
+    }
+
 
     if (error.length > 0) {
         return res.status(400).send({ message: error })
@@ -106,10 +101,10 @@ export const editarUsuario = (req, res) => {
         error.push("o usuario deve ser maior de 13 anos")
     }
 
-
-
-    if (!imagem.match(/(https?:\/\/.*.(?:png|jpg|jpeg))/i)) {
-        error.push("A imagem deve um URL válido que termine em png, jpg ou jpeg.")
+    if (imagem == '') {
+        error.push('Preencha o campo Imagem')
+    } else if (!urlValida(imagem)) {
+        error.push('A imagem precisa ter um formato válido: .jpeg/.jpg/.gif/.png')
     }
 
     if (error.length) {
