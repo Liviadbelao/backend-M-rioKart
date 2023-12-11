@@ -18,6 +18,15 @@ export const pegarUsuariosId = (req, res) => {
 }
 
 
+const urlValida = (imagem) => {
+    if (imagem.match(/\.(jpeg|jpg|gif|png)$/) != null) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+
 export const pegarTodos = (req, res) => {
     const { nome, tipo, idade } = req.query;
     let usuarios = lista.pegarTodos();
@@ -49,17 +58,23 @@ export const addUsuarios = (req, res) => {
     if (nome.length < 3 || nome.length > 20) {
         error.push('O tamanho do nome deve ser entre 3 a 20 caracteres')
     }
-    if (descricao.length < 10 || descricao.length > 100) {
+    if (descricao.length < 10 || descricao.length > 200) {
         error.push('O tamanho da descrição deve ser entre 10 a 100 caracteres')
     }
 
     if (idade < 13) {
         error.push("o usuario deve ser maior de 13 anos")
     }
-
-    /*     if (!imagem.match(/(https?:\/\/.*.(?:png|jpg|jpeg))/i)) {
-            error.push("A imagem deve um URL válido que termine em png, jpg ou jpeg.")
-        } */
+    if(!imagem) {
+        console.log('Preencha o campo imagem')
+        setErroImagem('Preencha o campo Imagem')
+      } else if (!urlValida(imagem)) {
+        console.log('A imagem precisa ser valida')
+        setErroImagem('A imagem precisa ter um formato válido: .jpeg/.jpg/.gif/.png')
+      } else {
+        console.log('Limpou');
+        setErroImagem('');
+      }
 
     if (error.length > 0) {
         return res.status(400).send({ message: error })
@@ -83,7 +98,7 @@ export const editarUsuario = (req, res) => {
     if (nome.length > 40) {
         error.push("o nome deve ter menos que 40 caracteres")
     }
-    if (descricao.length > 40) {
+    if (descricao.length > 200) {
         error.push("o descricao deve ter menos que 40 caracteres")
     }
 
