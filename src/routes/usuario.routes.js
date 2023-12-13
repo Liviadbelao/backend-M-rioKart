@@ -1,7 +1,6 @@
 import { Router } from "express";
-import { addUsuarios, deletarUsuario, editarUsuario, pegarTodos, pegarUsuariosId } from "../controllers/usuario.contollers.js";
+import { addUsuarios, deletarUsuario, editarUsuario, pegarTodos, pegarUsuariosId } from "../controller/usuario.contollers.js";
 
-// Requisições
 const RotasUsuarios = Router();
 
 RotasUsuarios.get("/:id",pegarUsuariosId)

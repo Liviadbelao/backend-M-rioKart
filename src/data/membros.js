@@ -8,6 +8,7 @@ const membros = [
         tipo: "Alun(o)a",
         imagem: "/membros/giu2.jpg"
     },
+
     { 
         nome: "Manuela Liberato",
         avatar: "/cadastroSobreNos/princesa peach-PhotoRoom.png-PhotoRoom.png",
@@ -16,6 +17,7 @@ const membros = [
         tipo: "Alun(o)a",
         imagem: "/membros/manu.jpg"
     },
+
     {
         nome: "Nickolas Mamede",
         avatar: "/cadastroSobreNos/dragaozao-removebg-preview.png",
@@ -24,7 +26,6 @@ const membros = [
         descricao: "Aluno do SESI/SENAI - Valinhos. Cursando Desenvolvimento de Sistema, segundo semestre.",
         imagem: "/membros/nico.jpg"
     },
-
 
     {
         nome: "Maria Cancian",
@@ -35,6 +36,7 @@ const membros = [
         imagem: "/membros/cancian.jpg"
 
     },
+
     {
         nome: "Maria Rita",
         idade: "16",
@@ -44,6 +46,7 @@ const membros = [
         imagem: "/membros/mrita2.jpg"
 
     },
+    
     {
         nome: "Lívia Belão",
         avatar: "/cadastroSobreNos/princesa belao-PhotoRoom.png-PhotoRoom.png",
