@@ -59,16 +59,25 @@ export const addUsuarios = (req, res) => {
     }
     if (descricao.length < 10 || descricao.length > 200) {
         error.push('O tamanho da descrição deve ser entre 10 a 100 caracteres')
+    } 
+    if (avatar == '') {
+        error.push('selecione um avatar')
+    }
+    if(tipo==''){
+        error.push('selecione qual tipo de ususario vc representa')
     }
 
     if (idade < 13) {
         error.push("o usuario deve ser maior de 13 anos")
+    } else if (idade > 110) {
+        error.push('O usuário deve conter uma idade que não seja da época da rainha Elizabeth')
     }
     if (imagem == '') {
         error.push('Preencha o campo Imagem')
     } else if (!urlValida(imagem)) {
         error.push('A imagem precisa ter um formato válido: .jpeg/.jpg/.gif/.png')
     }
+
 
 
     if (error.length > 0) {
