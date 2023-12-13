@@ -1,17 +1,9 @@
-//Importações
-import personagem from "../data/personagens.js"
+// Importações
+import personagem from "../data/personagens.js";
 
-//Função para pegar lista de personagens
+// Função para pegar lista de personagens
 export const getPersonagens = (req, res) => {
+  let listaP = personagem;
 
-    let listaP =  personagem;
-
-    return res.status(200).send(
-       listaP
-    )
-    
-}
-
-
-
-
+  return res.status(200).send({ quantidade: listaP.length, Lista: listaP });
+};
