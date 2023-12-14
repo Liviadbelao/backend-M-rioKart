@@ -35,8 +35,6 @@ export const getMapasId = (req, res) => {
 
     const { id } = req.params
 
-    console.log(id);
-
     const mapas = lista.getMapaId(id)
 
     //Verificando se o mapa existe

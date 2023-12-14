@@ -56,6 +56,37 @@ export const criarContato = (req, res) => {
   return res.status(201).send(contato);
 };
 
+//Função de deletar um contato existente
+export const deletarContato = (req, res) => {
+
+  const { id } = req.params;
+  const contato = lista.getContatoId(id)
+
+  //Verificando se o mapa existe
+  if (!contato) {
+      return res.status(404).send({ message: "não foi removido corretamente" })
+  }
+
+  lista.removerContato(id)
+
+  return res.status(200).send({ messege: "contato removido", contato })
+}
+
+//Função de pegar mapa por id
+export const getContatoId = (req, res) => {
+
+  const { id } = req.params
+
+  const contato = lista.getContatoId(id)
+
+  //Verificando se o mapa existe
+  if (!contato) {
+      return res.status(404).send({ message: `não achou o contato de ID: ${id}` })
+  }
+  return res.status(200).send({ message: "contato do id:", contato })
+}
+
+//Função de verificação de email
 function isEmailValid(email) {
   return email.includes('@');
 }
