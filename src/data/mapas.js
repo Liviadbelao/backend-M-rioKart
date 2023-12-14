@@ -183,7 +183,7 @@ const mapas = [
   {
     id: uuidv4(),
     nome: 'Excitebike Arena',
-    imagem: '/mapasfotos/',
+    imagem: '/mapasfotos/Excitebike Arena.jpg',
     descricao: 'É bastante único e se destaca por sua aparência minimalista, com obstáculos simples e um terreno plano.',
     inspiracao: 'Inspiração no jogo "Excitebike".',
     copa: 'Copa Ovo',
@@ -191,7 +191,72 @@ const mapas = [
     plataforma: 'Nintendo Switch'
   },
 
-  //Copa Folha
+  {
+    id: uuidv4(),
+    nome: 'Dragon Drifitway',
+    imagem: '/mapasfotos/Dragon_Driftway_MK8_overview.webp',
+    descricao: 'É aparente sua estilização que traz caracteristicas da cultura chinesa com seus terrenos elevados e trazendo mais emoção e dificuldade.',
+    inspiracao: 'Inpiração no jogo Dragon.',
+    copa: 'Copa Ovo',
+    trofeus: 900,
+    plataforma: 'Nintendo Switch'
+  },
+
+  {
+    id: uuidv4(),
+    nome: 'Mute City',
+    imagem: '/mapasfotos/Mute City.webp',
+    descricao: 'Mute City, inspirada em F-Zero, destaca-se no Mario Kart por sua velocidade intensa e curvas desafiadoras, oferecendo uma experiência de corrida empolgante e futurista.',
+    inspiracao: 'Foi inspirado na série de jogos F-Zero da Nintendo.',
+    copa: 'Copa Ovo',
+    trofeus: 900,
+    plataforma: 'Nintendo Switch'
+  },
+
+  //Copa Crossover
+
+  {
+    id: uuidv4(),
+    nome: 'Baby Park',
+    imagem: '/mapasfotos/baby-park-mk8.png',
+    descricao: 'Baby Park, conhecida por seu design circular simples e curvas fechadas, oferece corridas caóticas e intensas em Mario Kart, sendo notável pela ação constante e uso estratégico de itens.',
+    inspiracao: 'Inspirado na versão infantil dos personagens',
+    copa: 'Copa Crossover',
+    trofeus: 900,
+    plataforma: 'Nintendo Switch'
+  },
+
+  {
+    id: uuidv4(),
+    nome: 'Cheese Land',
+    imagem: '/mapasfotos/CheeseLand.webp',
+    descricao: 'Cheese Land, uma pista em Mario Kart, destaca-se pelo seu tema alimentar de queijo, apresentando curvas desafiadoras e um design criativo que adiciona diversão ao percurso.',
+    inspiracao: 'Inspirado na ideia de um ambiente feito de queijo.',
+    copa: 'Copa Crossover',
+    trofeus: 900,
+    plataforma: 'Nintendo Switch'
+  },
+  {
+    id: uuidv4(),
+    nome: 'Wild Woods',
+    imagem: '/mapasfotos/Wild woods.webp',
+    descricao: 'Wild Woods em Mario Kart é conhecido por sua floresta exuberante, caminhos suspensos desafiadores, saltos naturais e obstáculos, criando uma corrida dinâmica e aventuresca.',
+    inspiracao: ' Sua inspiração foi refletir a beleza associados a ambientes naturais e florestais.',
+    copa: 'Copa Crossover',
+    trofeus: 900,
+    plataforma: 'Nintendo Switch'
+  },
+  {
+    id: uuidv4(),
+    nome: 'Animal Crossing',
+    imagem: '/mapasfotos/MarioKart8_AnimalCrossing.webp',
+    descricao: 'Cheese Land, uma pista em Mario Kart, destaca-se pelo seu tema alimentar de queijo, apresentando saltos, curvas desafiadoras e um design criativo que adiciona diversão ao percurso.',
+    inspiracao: 'Inspirado na versão infantil dos personagens',
+    copa: 'Copa Crossover',
+    trofeus: 900,
+    plataforma: 'Nintendo Switch'
+  },
+  
 
   //Copa Casco
   {
