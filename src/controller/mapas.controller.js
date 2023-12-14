@@ -105,18 +105,83 @@ export const criarMapas = (req, res) => {
 
 //Função de editar um mapa existente
 export const editarMapas = (req, res) => {
-
+    const { id } = req.params;
     let errors = [];
 
-    const { id } = req.params;
+    const { nome, imagem, descricao, inspiracao, copa, trofeus, plataforma } = req.body;
+    
+    if (!nome ) {
+        errors.push('Preencha o campo Nome');
+    } 
+    if (!imagem) {
+        errors.push('Preencha o campo Imagem')
+    }
+    if (!descricao) {
+        errors.push('Preencha o campo Descrição')
+    }
+    if (!inspiracao) {
+        errors.push('Preencha o campo Inspiração')
+    }
+    
+    if (!copa) {
+        errors.push('Selecione uma copa')
+    }
 
-    let { nome, imagem, descricao, inspiracao, copa, trofeus, plataforma } = req.body;
-    let mapa = lista.getMapaId(id);
+    if (!trofeus) {
+        errors.push('Preenca a quatidade de troféus')
+    }else if (trofeus < 500 || trofeus > 5000) {
+        errors.push('A quantidade de troféus deve estar entre 500 e 5000 troféus')
+    }else if (trofeus % 100 !== 0) {
+        errors.push('Quantidade de Troféus Inválida, insira um valor que seja multiplo de 100')
+    }
+    if (!plataforma) {
+        errors.push('Preencha o campo Plataforma')
+    }
 
-    const mapaAtualizado = lista.atualizarmapa(id, nome, imagem, descricao, inspiracao, copa, trofeus, plataforma);
+  
 
-    return res.status(200).send({ message: "Mapa atualizado:", mapaAtualizado });
+    if (errors.length !== 0) {
+        return res.status(400).json(errors);
+    }
+
+    const mapa = lista.getMapaId(id);
+
+    if (!mapa) {
+        return res.status(404).send({ message: "Mapa não encontrado." });
+    }
+
+    // Atualiza os campos apenas se existirem
+    if (nome !== undefined) {
+        mapa.nome = nome;
+    }
+
+    if (imagem !== undefined) {
+        mapa.imagem = imagem;
+    }
+
+    if (descricao !== undefined) {
+        mapa.descricao = descricao;
+    }
+
+    if (inspiracao !== undefined) {
+        mapa.inspiracao = inspiracao;
+    }
+
+    if (copa !== undefined) {
+        mapa.copa = copa;
+    }
+
+    if (trofeus !== undefined) {
+        mapa.trofeus = trofeus;
+    }
+
+    if (plataforma !== undefined) {
+        mapa.plataforma = plataforma;
+    }
+
+    return res.status(200).send({ message: "Mapa atualizado:", mapa });
 }
+
 
 //Função de deletar um mapa existente
 export const deletarMapa = (req, res) => {
