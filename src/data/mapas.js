@@ -241,7 +241,7 @@ const mapas = [
     nome: 'Wild Woods',
     imagem: '/mapasfotos/Wild woods.webp',
     descricao: 'Wild Woods em Mario Kart é conhecido por sua floresta exuberante, caminhos suspensos desafiadores, saltos naturais e obstáculos, criando uma corrida dinâmica e aventuresca.',
-    inspiracao: ' Sua inspiração foi refletir a beleza associados a ambientes naturais e florestais.',
+    inspiracao: ' Sua inspiração foi refletir a beleza associados a  ambientes naturais e florestais.',
     copa: 'Copa Crossover',
     trofeus: 900,
     plataforma: 'Nintendo Switch'
@@ -250,8 +250,8 @@ const mapas = [
     id: uuidv4(),
     nome: 'Animal Crossing',
     imagem: '/mapasfotos/MarioKart8_AnimalCrossing.webp',
-    descricao: 'Cheese Land, uma pista em Mario Kart, destaca-se pelo seu tema alimentar de queijo, apresentando saltos, curvas desafiadoras e um design criativo que adiciona diversão ao percurso.',
-    inspiracao: 'Inspirado na versão infantil dos personagens',
+    descricao: ' A pista de Animal Crossing em Mario Kart é distintiva por sua mudança de estação do ano e presença de personagens, oferecendo uma experiência encantadora e interativa.',
+    inspiracao: 'Inspirada na popular série de jogos Animal Crossing da Nintendo. ',
     copa: 'Copa Crossover',
     trofeus: 900,
     plataforma: 'Nintendo Switch'
@@ -427,6 +427,18 @@ const mapas = [
   },
 
   //Copa Triforce
+  {
+    id: uuidv4(),
+    nome: 'Rainbow Road N64',
+    imagem: '/mapasfotos/MKW_Wario.png',
+    descricao: 'O layout da pista "Rainbow Road" é frequentemente caracterizado por trilhas estreitas e curvas acentuadas, tornando-o um dos mapas mais desafiadores da série.',
+    inspiracao: 'Cenário espacial e arco-íris.',
+    copa: 'Copa Triforce',
+    trofeus: 1400,
+    plataforma: 'Nintendo Switch'
+  },
+
+
 
   //Copa Sino
 ]
