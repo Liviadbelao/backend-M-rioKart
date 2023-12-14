@@ -18,8 +18,8 @@ export const criarContato = (req, res) => {
 
   let errors = [];
 
-  const { nome, email, telefone, nascimento } = req.body;
-  const contato = new Contato(nome, email, telefone, nascimento);
+  const { nome, email, telefone, mensagem } = req.body;
+  const contato = new Contato(nome, email, telefone, mensagem);
 
   //Verificações
   if (!nome) {
@@ -42,8 +42,10 @@ export const criarContato = (req, res) => {
     errors.push('O telefone deve conter 11 dígitos');
   }
 
-  if (!nascimento) {
+  if (!mensagem) {
     errors.push('Preencha o campo Nascimento')
+  } else if( mensagem.length > 150) {
+    errors.push("A mensagem é muito longa")
   }
 
   if (errors.length != 0) {

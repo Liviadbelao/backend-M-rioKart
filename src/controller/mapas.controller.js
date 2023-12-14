@@ -105,66 +105,83 @@ export const criarMapas = (req, res) => {
 
 //Função de editar um mapa existente
 export const editarMapas = (req, res) => {
-
+    const { id } = req.params;
     let errors = [];
 
-    const { id } = req.params;
-
-    let { nome, imagem, descricao, inspiracao, copa, trofeus, plataforma } = req.body;
-    let mapa = lista.getMapaId(id);
-
-    //Verificando se o mapa do id passado existe
-    if (!mapa) {
-        return res.status(404).send({ message: "id não encontrado" });
-
-        //Verificações
-    } if (!nome) {
+    const { nome, imagem, descricao, inspiracao, copa, trofeus, plataforma } = req.body;
+    
+    if (!nome ) {
         errors.push('Preencha o campo Nome');
-    } else if (nome.length < 3 || nome.length > 20) {
-        errors.push('O tamanho do nome deve ser entre 3 a 20 caracteres')
-    }
-
+    } 
     if (!imagem) {
         errors.push('Preencha o campo Imagem')
-    } else if (!urlValida(imagem)) {
-        errors.push('A imagem precisa ter um formato válido: .jpeg/.jpg/.gif/.png')
     }
-
     if (!descricao) {
         errors.push('Preencha o campo Descrição')
-    } else if (descricao.length < 10 || descricao.length > 100) {
-        errors.push('O tamanho da descrição deve ser entre 10 a 100 caracteres')
     }
-
     if (!inspiracao) {
         errors.push('Preencha o campo Inspiração')
-    } else if (inspiracao.length < 10 || inspiracao.length > 100) {
-        errors.push('O tamanho da inspiração deve ser entre 10 a 100 caracter')
     }
-
+    
     if (!copa) {
         errors.push('Selecione uma copa')
     }
 
     if (!trofeus) {
         errors.push('Preenca a quatidade de troféus')
-    } else if (trofeus < 500 || trofeus > 5000) {
-        errors.push('Quantidade de Troféus inválida')
-    } else if (trofeus % 100 !== 0) {
+    }else if (trofeus < 500 || trofeus > 5000) {
+        errors.push('A quantidade de troféus deve estar entre 500 e 5000 troféus')
+    }else if (trofeus % 100 !== 0) {
         errors.push('Quantidade de Troféus Inválida, insira um valor que seja multiplo de 100')
     }
-
     if (!plataforma) {
         errors.push('Preencha o campo Plataforma')
     }
-    if (errors.length != 0) {
-        return res.status(400).json(errors)
+
+  
+
+    if (errors.length !== 0) {
+        return res.status(400).json(errors);
     }
 
-    const mapaAtualizado = lista.atualizarmapa(id, nome, imagem, descricao, inspiracao, copa, trofeus, plataforma);
+    const mapa = lista.getMapaId(id);
 
-    return res.status(200).send({ message: "Mapa atualizado:", mapaAtualizado });
+    if (!mapa) {
+        return res.status(404).send({ message: "Mapa não encontrado." });
+    }
+
+    // Atualiza os campos apenas se existirem
+    if (nome !== undefined) {
+        mapa.nome = nome;
+    }
+
+    if (imagem !== undefined) {
+        mapa.imagem = imagem;
+    }
+
+    if (descricao !== undefined) {
+        mapa.descricao = descricao;
+    }
+
+    if (inspiracao !== undefined) {
+        mapa.inspiracao = inspiracao;
+    }
+
+    if (copa !== undefined) {
+        mapa.copa = copa;
+    }
+
+    if (trofeus !== undefined) {
+        mapa.trofeus = trofeus;
+    }
+
+    if (plataforma !== undefined) {
+        mapa.plataforma = plataforma;
+    }
+
+    return res.status(200).send({ message: "Mapa atualizado:", mapa });
 }
+
 
 //Função de deletar um mapa existente
 export const deletarMapa = (req, res) => {
