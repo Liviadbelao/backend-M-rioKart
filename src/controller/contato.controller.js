@@ -22,14 +22,14 @@ export const criarContato = (req, res) => {
   const contato = new Contato(nome, email, telefone, mensagem);
 
   //Verificações
-/*   if (!nome) {
+if (!nome) {
     errors.push('Preencha o campo Nome');
   } else if (nome.length < 3 || nome.length > 20) {
     errors.push('O tamanho do nome deve ser entre 3 a 20 caracteres')
   }
 
   if (!email) {
-    errors.push('Preencha o campo Imagem')
+    errors.push('Preencha o campo Email')
   } else if (!isEmailValid(email)) {
     errors.push('O email precisa conter "@"')
   }
@@ -43,14 +43,14 @@ export const criarContato = (req, res) => {
   }
 
   if (!mensagem) {
-    errors.push('Preencha o campo Nascimento')
+    errors.push('Preencha o campo Mensagem')
   } else if( mensagem.length > 150) {
     errors.push("A mensagem é muito longa")
   }
 
   if (errors.length != 0) {
     return res.status(400).json(errors)
-  } */
+  } 
 
   //Adicionando novo contato a nossa lista 
   lista.addContato(contato);
