@@ -9,7 +9,7 @@ const lista = new ContatoLista();
 export const getContatos = (req, res) => {
 
   let contatos = lista.getTodosContatos();
-  return res.status(200).send({ quantidade: contatos.length, Lista: contatos });
+  return res.status(200).send(contatos);
 
 };
 
@@ -22,7 +22,7 @@ export const criarContato = (req, res) => {
   const contato = new Contato(nome, email, telefone, mensagem);
 
   //Verificações
-  if (!nome) {
+/*   if (!nome) {
     errors.push('Preencha o campo Nome');
   } else if (nome.length < 3 || nome.length > 20) {
     errors.push('O tamanho do nome deve ser entre 3 a 20 caracteres')
@@ -50,7 +50,7 @@ export const criarContato = (req, res) => {
 
   if (errors.length != 0) {
     return res.status(400).json(errors)
-  }
+  } */
 
   //Adicionando novo contato a nossa lista 
   lista.addContato(contato);
