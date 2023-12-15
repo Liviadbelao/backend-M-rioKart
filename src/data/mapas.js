@@ -429,17 +429,93 @@ const mapas = [
   //Copa Triforce
   {
     id: uuidv4(),
-    nome: 'Rainbow Road N64',
+    nome: 'Warios Gold Mine',
     imagem: '/mapasfotos/MKW_Wario.png',
-    descricao: 'O layout da pista "Rainbow Road" é frequentemente caracterizado por trilhas estreitas e curvas acentuadas, tornando-o um dos mapas mais desafiadores da série.',
-    inspiracao: 'Cenário espacial e arco-íris.',
+    descricao: 'Warios Gold Mine em Mario Kart destaca-se por sua temática de mina de ouro e desafios emocionantes, apresentando elevações dinâmicas e carrinhos de mina como obstáculos únicos.',
+    inspiracao: ' Inspirada na temática de mineração e exploração de ouro.',
+    copa: 'Copa Triforce',
+    trofeus: 1400,
+    plataforma: 'Nintendo Switch'
+  },
+
+  {
+    id: uuidv4(),
+    nome: 'Rainbow road',
+    imagem: '/mapasfotos/Wii_Rainbow_Road_in_MK8DX.webp',
+    descricao: 'Rainbow Road, em Mario Kart, destaca-se por sua estética espacial colorida, ausência de barreiras laterais desafiadoras, curvas acentuadas, saltos e uma trilha sonora empolgante.',
+    inspiracao: ' Inspirada no conceito de um caminho celeste.',
+    copa: 'Copa Triforce',
+    trofeus: 1400,
+    plataforma: 'Nintendo Switch'
+  },
+  {
+    id: uuidv4(),
+    nome: 'Hyrule Circuit',
+    imagem: '/mapasfotos/HyruleCircuit.webp',
+    descricao: ' Hyrule Circuit oferece uma experiência única ao transportar os jogadores para o mundo de The Legend of Zelda dentro do contexto de Mario Kart. ',
+    inspiracao: 'Inspirado no universo de The Legend of Zelda. ',
+    copa: 'Copa Triforce',
+    trofeus: 1400,
+    plataforma: 'Nintendo Switch'
+  },
+  {
+    id: uuidv4(),
+    nome: 'Ice Ice Outpost',
+    imagem: '/mapasfotos/IceIceOutpost.png',
+    descricao: 'a pista oferece uma experiência desafiadora e visualmente cativante, destacando-se por sua dupla rota e ambiente gelado.',
+    inspiracao: 'Inspirada pelo tema de inverno e gelo.',
     copa: 'Copa Triforce',
     trofeus: 1400,
     plataforma: 'Nintendo Switch'
   },
 
 
-
   //Copa Sino
+
+  {
+    id: uuidv4(),
+    nome: 'Koopa City',
+    imagem: '/mapasfotos/koopaCity.webp',
+    descricao: ' Koopa City oferece uma experiência de corrida urbana noturna com desafios variados e um ambiente visualmente impressionante.',
+    inspiracao: 'Inspirada em ambientes urbanos modernos, com arranha-céus, luzes de néon e elementos futuristas.  ',
+    copa: 'Copa Sino',
+    trofeus: 1400,
+    plataforma: 'Nintendo Switch'
+  },
+
+  {
+    id: uuidv4(),
+    nome: 'Big blue',
+    imagem: '/mapasfotos/BigBlue.webp',
+    descricao: 'Big Blue oferece uma experiência de corrida emocionante, homenageando a série F-Zero com sua estética futurista e elementos de alta velocidade.',
+    inspiracao: 'Inspirado na série de jogos F-Zero da Nintendo.   ',
+    copa: 'Copa Sino',
+    trofeus: 1400,
+    plataforma: 'Nintendo Switch'
+  },
+
+  {
+    id: uuidv4(),
+    nome: 'Super Bell Subway',
+    imagem: '/mapasfotos/SuperBellSubway.jpg',
+    descricao: 'Super Bell Subway oferece uma experiência de corrida única e emocionante em um ambiente urbano subterrâneo.',
+    inspiracao: 'Inspirado em ambientes urbanos de metrôs  ',
+    copa: 'Copa Sino',
+    trofeus: 1400,
+    plataforma: 'Nintendo Switch'
+  },
+
+  {
+    id: uuidv4(),
+    nome: 'Ribbon Road',
+    imagem: '/mapasfotos/RibbonRoad.webp',
+    descricao: 'Ribbon Road proporciona uma experiência de corrida única, incorporando elementos de fitas e laços em um ambiente caseiro e colorido.',
+    inspiracao: 'Inspirado na estética de fitas, laços e um ambiente caseiro, evocando a sensação de uma pista improvisada em casa.  ',
+    copa: 'Copa Sino',
+    trofeus: 1400,
+    plataforma: 'Nintendo Switch'
+  },
+
+  
 ]
 export default mapas
